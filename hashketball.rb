@@ -57,7 +57,6 @@ def num_points_scored(player_name)
     end
   end
 end
-<<<<<<< HEAD
 
 def team_colors(team_name)
   game_hash.each do |place, team|
@@ -119,4 +118,3 @@ def big_shoe_rebounds
   end
   rebounds
 end
-=======
