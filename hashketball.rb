@@ -118,6 +118,7 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
+  points = 0
   teams_array = game_hash[:home][:players] | game_hash[:away][:players]
   teams_array.each do |players|
     players.each do |attributes, data|
