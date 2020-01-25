@@ -120,9 +120,10 @@ end
 def most_points_scored
   points = 0
   teams_array = game_hash[:home][:players] | game_hash[:away][:players]
-  teams_array.each do |players|
-    players.each do |attributes, data|
-      puts data
+  for each in teams_array
+    if each[:points] > points
+      points = each[:points]
     end
   end
+  points
 end
