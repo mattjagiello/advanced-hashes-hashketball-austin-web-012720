@@ -56,20 +56,6 @@ def shoe_size(player_name)
   end
 end
 
-def num_points_scored(player_name)
-  game_hash.each do |place, team|
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-          if player[:player_name] == player_name
-            return player[:points]
-          end
-        end
-      end
-    end
-  end
-end
-
 def team_colors(team_name)
   game_hash.each do |place, team|
     if team[:team_name] == team_name
@@ -132,6 +118,4 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  teams_array = game_hash[:home][:players] | game_hash[:away][:players]
-  print teams_array
 end
