@@ -42,7 +42,11 @@ def num_points_scored(player_name)
   end
 end
 
+<<<<<<< HEAD
 def shoe_size(player_name)
+=======
+def num_points_scored(player_name)
+>>>>>>> d4c02a5952aba0195ff33942ded6aca7f65050db
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
@@ -55,6 +59,7 @@ def shoe_size(player_name)
     end
   end
 end
+<<<<<<< HEAD
 
 def team_colors(team_name)
   game_hash.each do |place, team|
@@ -116,3 +121,5 @@ def big_shoe_rebounds
   end
   rebounds
 end
+=======
+>>>>>>> d4c02a5952aba0195ff33942ded6aca7f65050db
