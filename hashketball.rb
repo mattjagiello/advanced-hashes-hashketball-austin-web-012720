@@ -132,5 +132,6 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  return "Ben Gordon"
+  teams_array = game_hash[:home][:players] | game_hash[:away][:players]
+  print teams_array
 end
